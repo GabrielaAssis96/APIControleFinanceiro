@@ -14,6 +14,6 @@ class ReceitaController {
     fun cadastrarReceita(
         @RequestBody receita: novaReceitaDto
     ) {
-
+        TODO()
     }
 }
