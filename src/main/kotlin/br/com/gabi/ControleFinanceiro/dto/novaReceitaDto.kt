@@ -2,9 +2,10 @@ package br.com.gabi.ControleFinanceiro.dto
 
 import java.math.BigDecimal
 import java.time.LocalDateTime
+import javax.validation.constraints.NotEmpty
 
 data class novaReceitaDto(
-    var descricao: String,
-    var valor: BigDecimal,
-    var data: LocalDateTime = LocalDateTime.now()
+    @NotEmpty val descricao: String,
+    @NotEmpty val valor: BigDecimal,
+    @NotEmpty val data: LocalDateTime = LocalDateTime.now()
 )
