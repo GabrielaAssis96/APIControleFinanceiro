@@ -10,5 +10,9 @@ class CadastraService(private var receitas: List<NovaReceitaDto> = ArrayList()) 
         receitas.plus(novaReceitaDto)
     }
 
+    fun listarReceita(): List<NovaReceitaDto> {
+        return receitas
+    }
+
 
 }
