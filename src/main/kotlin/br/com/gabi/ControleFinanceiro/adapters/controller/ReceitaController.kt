@@ -16,6 +16,6 @@ class ReceitaController(
     fun cadastrarReceita(
         @RequestBody receita: NovaReceitaDto
     ) {
-        cadastraService.cadastrarReceita()
+     cadastraService.cadastrarReceita(receita)
     }
 }
